@@ -1,0 +1,7 @@
+.*bandit_report.json.*
+.*test_results.txt.*
+.*trufflehog_report.txt.*
+.*detector.py.*
+.*validation.py.*
+.*token-bob.*
+.*zip -r.*

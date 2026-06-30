@@ -24,3 +24,6 @@ g, alice, admin
 g, bob, ml_engineer
 g, carol, data_analyst
 g, dave, intern
+
+g, admin, ml_engineer
+g, ml_engineer, data_analyst

@@ -1,0 +1,46 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-8.4.2, pluggy-1.5.0 -- D:\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\vinai\Day24-2A202600926-MaiVanThuyen\medviet-governance
+plugins: anyio-4.10.0, Faker-37.12.0, langsmith-0.8.9
+collecting ... collected 16 items
+
+tests/test_api.py::test_health PASSED                                    [  6%]
+tests/test_api.py::test_admin_access PASSED                              [ 12%]
+tests/test_api.py::test_ml_engineer_access PASSED                        [ 18%]
+tests/test_api.py::test_data_analyst_access PASSED                       [ 25%]
+tests/test_api.py::test_intern_access PASSED                             [ 31%]
+tests/test_api.py::test_unauthorized_access PASSED                       [ 37%]
+tests/test_pii.py::TestPIIDetection::test_cccd_detected PASSED           [ 43%]
+tests/test_pii.py::TestPIIDetection::test_phone_detected PASSED          [ 50%]
+tests/test_pii.py::TestPIIDetection::test_email_detected PASSED          [ 56%]
+tests/test_pii.py::TestPIIDetection::test_detection_rate_above_95_percent PASSED [ 62%]
+tests/test_pii.py::TestAnonymization::test_pii_not_in_output PASSED      [ 68%]
+tests/test_pii.py::TestAnonymization::test_non_pii_columns_unchanged PASSED [ 75%]
+tests/test_validation.py::test_validation_suite PASSED                   [ 81%]
+tests/test_validation.py::test_validate_anonymized_data PASSED           [ 87%]
+tests/test_vault.py::test_vault_roundtrip PASSED                         [ 93%]
+tests/test_vault.py::test_vault_encrypt_column PASSED                    [100%]
+
+============================== warnings summary ===============================
+..\..\..\anaconda3\Lib\site-packages\spacy\util.py:971
+tests/test_pii.py::TestPIIDetection::test_cccd_detected
+tests/test_pii.py::TestPIIDetection::test_phone_detected
+tests/test_pii.py::TestPIIDetection::test_email_detected
+tests/test_pii.py::TestPIIDetection::test_detection_rate_above_95_percent
+tests/test_pii.py::TestAnonymization::test_pii_not_in_output
+tests/test_pii.py::TestAnonymization::test_non_pii_columns_unchanged
+  D:\anaconda3\Lib\site-packages\spacy\util.py:971: UserWarning: [W095] Model 'vi_core_news_lg' (3.6.0) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.13). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+    warnings.warn(warn_msg)
+
+tests/test_validation.py::test_validation_suite
+tests/test_validation.py::test_validation_suite
+tests/test_validation.py::test_validation_suite
+tests/test_validation.py::test_validation_suite
+tests/test_validation.py::test_validation_suite
+tests/test_validation.py::test_validation_suite
+  D:\anaconda3\Lib\site-packages\great_expectations\expectations\expectation.py:1631: UserWarning: `result_format` configured at the Validator-level will not be persisted. Please add the configuration to your Checkpoint config or checkpoint_run() method instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 16 passed, 13 warnings in 26.28s =======================
